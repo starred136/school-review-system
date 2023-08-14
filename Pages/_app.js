@@ -1,10 +1,12 @@
+import React from 'react' 
+import Document from "../components/layout";
 
-import Document from "./_document";
 import {
   Hydrate,
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
+import Layout from '../components/layout';
 
 
 
@@ -14,11 +16,11 @@ export default function Home({ Component, pageProps }) {
   return (
     <> 
     <QueryClientProvider client={queryClient}>
-        <Document>
+        {/* <Layout> */}
         <Hydrate state={pageProps.dehydratedState}>
           <Component {...pageProps} />
           </Hydrate>
-        </Document> 
+        {/* </Layout>  */}
     </QueryClientProvider>
     </>
   )

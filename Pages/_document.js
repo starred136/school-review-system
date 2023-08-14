@@ -39,10 +39,10 @@ export default function Document(props) {
           </Head>
 
           <body>
-            {/* <Header /> */}
+            <Header />
               <Main />
                 <NextScript />
-            {/* <Footer/> */}
+            <Footer/>
 
             <script src="/assets/js/bootstrap.bundle.js" />
             <script src="/assets/js/bootstrap.bundle.min.js" />

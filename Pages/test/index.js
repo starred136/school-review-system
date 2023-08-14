@@ -1,9 +1,33 @@
-import { dehydrate, QueryClient, useQuery } from '@tanstack/react-query'
+import { useQueries, QueryClient, dehydrate, useQuery } from "@tanstack/react-query"
+import React from "react"
 
-export default async function getStaticProps() {
+export const getStaticProps = async () => {
   const queryClient = new QueryClient()
+   
+  
+  const posts =   await fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(res => res)
 
-  await queryClient.prefetchQuery(['posts'], getPosts)
+  console.log("posts", posts)
 
- 
-  }
+
+   return { props: { posts } }
+
+
+}
+
+const Ninja = (props) => {
+  const { data } = useQuery({
+    queryKey: ['posts'],
+    queryFn: fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(res => res),
+    initialData: props.posts,
+  })
+
+  console.log("data from post", data)
+  return(
+    <div>
+      <h1>Users</h1>
+    </div>
+  )
+}
+
+export default Ninja
