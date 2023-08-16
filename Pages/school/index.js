@@ -1,6 +1,14 @@
 import React from "react";
 
-export default function Blog(){
+export const getStaticProps = async () => {
+  const posts = await fetch("http://localhost/wordpress/wp-json/wp/v2/posts").then(
+    (res) => res.json()
+  );
+
+  return { props: { posts } };
+};
+
+export default function Blog( props ){
     return(
         <>
         <main>
@@ -17,228 +25,52 @@ export default function Blog(){
     <div className="row">
       <div className="col-lg-9">
         <div className="row">
-          <div className="col-md-6">
-            <article className="blog">
-              <figure>
-                <a href="blog-post.html">
-                  <img src="assets/img/blog-1.jpg" alt="" />
-                  <div className="preview">
-                    <span>Read more</span>
-                  </div>
-                </a>
-              </figure>
-              <div className="post_info">
-                <small>Category - 20 Nov. 2017</small>
-                <h2>
-                  <a href="blog-post.html">Ea exerci option hendrerit</a>
-                </h2>
-                <p>
-                  Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim
-                  offendit salutandi, in eos quod omnes epicurei, ex veri
-                  qualisque scriptorem mei.
-                </p>
-                <ul>
-                  <li>
-                    <div className="thumb">
-                      <img src="assets/img/avatar.jpg" alt="" />
-                    </div>{" "}
-                    Admin
-                  </li>
-                  <li>
-                    <i className="ti-comment" />
-                    20
-                  </li>
-                </ul>
-              </div>
-            </article>
-            {/* /article */}
-          </div>
+         
           {/* /col */}
-          <div className="col-md-6">
-            <article className="blog">
-              <figure>
-                <a href="blog-post.html">
-                  <img src="assets/img/blog-2.jpg" alt="" />
-                  <div className="preview">
-                    <span>Read more</span>
-                  </div>
-                </a>
-              </figure>
-              <div className="post_info">
-                <small>Category - 20 Nov. 2017</small>
-                <h2>
-                  <a href="blog-post.html">At usu sale dolorum offendit</a>
-                </h2>
-                <p>
-                  Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim
-                  offendit salutandi, in eos quod omnes epicurei, ex veri
-                  qualisque scriptorem mei.
-                </p>
-                <ul>
-                  <li>
-                    <div className="thumb">
-                      <img src="assets/img/avatar.jpg" alt="" />
-                    </div>{" "}
-                    Admin
-                  </li>
-                  <li>
-                    <i className="ti-comment" />
-                    20
-                  </li>
-                </ul>
-              </div>
-            </article>
-            {/* /article */}
-          </div>
+          
           {/* /col */}
-          <div className="col-md-6">
-            <article className="blog">
-              <figure>
-                <a href="blog-post.html">
-                  <img src="assets/img/blog-3.jpg" alt="" />
-                  <div className="preview">
-                    <span>Read more</span>
-                  </div>
-                </a>
-              </figure>
-              <div className="post_info">
-                <small>Category - 20 Nov. 2017</small>
-                <h2>
-                  <a href="blog-post.html">Iusto nominavi petentium in</a>
-                </h2>
-                <p>
-                  Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim
-                  offendit salutandi, in eos quod omnes epicurei, ex veri
-                  qualisque scriptorem mei.
-                </p>
-                <ul>
-                  <li>
-                    <div className="thumb">
-                      <img src="assets/img/avatar.jpg" alt="" />
-                    </div>{" "}
-                    Admin
-                  </li>
-                  <li>
-                    <i className="ti-comment" />
-                    20
-                  </li>
-                </ul>
-              </div>
-            </article>
-            {/* /article */}
-          </div>
+
           {/* /col */}
-          <div className="col-md-6">
-            <article className="blog">
-              <figure>
-                <a href="blog-post.html">
-                  <img src="assets/img/blog-4.jpg" alt="" />
-                  <div className="preview">
-                    <span>Read more</span>
-                  </div>
-                </a>
-              </figure>
-              <div className="post_info">
-                <small>Category - 20 Nov. 2017</small>
-                <h2>
-                  <a href="blog-post.html">Assueverit concludaturque quo</a>
-                </h2>
-                <p>
-                  Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim
-                  offendit salutandi, in eos quod omnes epicurei, ex veri
-                  qualisque scriptorem mei.
-                </p>
-                <ul>
-                  <li>
-                    <div className="thumb">
-                      <img src="assets/img/avatar.jpg" alt="" />
-                    </div>{" "}
-                    Admin
-                  </li>
-                  <li>
-                    <i className="ti-comment" />
-                    20
-                  </li>
-                </ul>
-              </div>
-            </article>
-            {/* /article */}
-          </div>
+          
           {/* /col */}
-          <div className="col-md-6">
-            <article className="blog">
-              <figure>
-                <a href="blog-post.html">
-                  <img src="assets/img/blog-5.jpg" alt="" />
-                  <div className="preview">
-                    <span>Read more</span>
-                  </div>
-                </a>
-              </figure>
-              <div className="post_info">
-                <small>Category - 20 Nov. 2017</small>
-                <h2>
-                  <a href="blog-post.html">Nec nihil menandri appellantur</a>
-                </h2>
-                <p>
-                  Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim
-                  offendit salutandi, in eos quod omnes epicurei, ex veri
-                  qualisque scriptorem mei.
-                </p>
-                <ul>
-                  <li>
-                    <div className="thumb">
-                      <img src="assets/img/avatar.jpg" alt="" />
-                    </div>{" "}
-                    Admin
-                  </li>
-                  <li>
-                    <i className="ti-comment" />
-                    20
-                  </li>
-                </ul>
-              </div>
-            </article>
-            {/* /article */}
-          </div>
-          {/* /col */}
-          <div className="col-md-6">
-            <article className="blog">
-              <figure>
-                <a href="blog-post.html">
-                  <img src="assets/img/blog-6.jpg" alt="" />
-                  <div className="preview">
-                    <span>Read more</span>
-                  </div>
-                </a>
-              </figure>
-              <div className="post_info">
-                <small>Category - 20 Nov. 2017</small>
-                <h2>
-                  <a href="blog-post.html">Te congue everti his salutandi</a>
-                </h2>
-                <p>
-                  Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim
-                  offendit salutandi, in eos quod omnes epicurei, ex veri
-                  qualisque scriptorem mei.
-                </p>
-                <ul>
-                  <li>
-                    <div className="thumb">
-                      <img src="assets/img/avatar.jpg" alt="" />
-                    </div>{" "}
-                    Admin
-                  </li>
-                  <li>
-                    <i className="ti-comment" />
-                    20
-                  </li>
-                </ul>
-              </div>
-            </article>
-            {/* /article */}
-          </div>
-          {/* /col */}
+          {props.posts.map(item => (
+                      <div className="col-md-6">
+                      <article className="blog">
+                        <figure>
+                          <a href="blog-post.html">
+                            <img src="assets/img/blog-6.jpg" alt="" />
+                            <div className="preview">
+                              <span>Read more</span>
+                            </div>
+                          </a>
+                        </figure>
+                        <div className="post_info">
+                          <small>Category - 20 Nov. 2017</small>
+                          <h2>
+                            <a href="blog-post.html">Te congue everti his salutandi</a>
+                          </h2>
+                          <p>
+                            Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim
+                            offendit salutandi, in eos quod omnes epicurei, ex veri
+                            qualisque scriptorem mei.
+                          </p>
+                          <ul>
+                            <li>
+                              <div className="thumb">
+                                <img src="assets/img/avatar.jpg" alt="" />
+                              </div>{" "}
+                              Admin
+                            </li>
+                            <li>
+                              <i className="ti-comment" />
+                              20
+                            </li>
+                          </ul>
+                        </div>
+                      </article>
+                      {/* /article */}
+                    </div>
+          ))}
         </div>
         {/* /row */}
         <div className="pagination__wrapper add_bottom_30">

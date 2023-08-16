@@ -2,23 +2,18 @@ import { useQueries, QueryClient, dehydrate, useQuery } from "@tanstack/react-qu
 import React from "react"
 
 export const getStaticProps = async () => {
-  const queryClient = new QueryClient()
-   
-  
-  const posts =   await fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(res => res)
 
+  const posts =   await fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json())
   console.log("posts", posts)
 
-
    return { props: { posts } }
-
 
 }
 
 const Ninja = (props) => {
   const { data } = useQuery({
     queryKey: ['posts'],
-    queryFn: fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(res => res),
+    queryFn: getStaticProps,
     initialData: props.posts,
   })
 
@@ -26,6 +21,7 @@ const Ninja = (props) => {
   return(
     <div>
       <h1>Users</h1>
+      { data.map(user => (<h2>{ user.name }</h2>)) }
     </div>
   )
 }
