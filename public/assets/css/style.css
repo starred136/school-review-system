@@ -1366,7 +1366,7 @@ ul#additional_links li:after {
 }
 .hero_single.version_3 {
   height: 620px;
-  background: #222 url(../img/home_section_2.jpg) center center no-repeat;
+  background: #222 url(../img/immeuble.jpg) center center no-repeat !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
