@@ -47,7 +47,7 @@ export default function Document(props) {
             <script src="/assets/js/bootstrap.bundle.js" />
             <script src="/assets/js/bootstrap.bundle.min.js" />
             <script src="/assets/js/common_scripts.js" />
-            <script src="/assets/js/functions.js" />
+            {/* <script src="/assets/js/functions.js" /> */}
             <script src="/assets/js/hideShowPassword.js" />
             <script src="/assets/js/hideShowPassword.min.js" />
             <script src="/assets/js/isotope.min.js" />

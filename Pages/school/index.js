@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export const getStaticProps = async () => {
   const posts = await fetch("http://localhost/wordpress/wp-json/wp/v2/posts").then(
@@ -47,7 +48,7 @@ export default function Blog( props ){
                         <div className="post_info">
                           <small>Category - 20 Nov. 2017</small>
                           <h2>
-                            <a href="blog-post.html">Te congue everti his salutandi</a>
+                            <Link href="school-post">Truc</Link>
                           </h2>
                           <p>
                             Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim
@@ -125,45 +126,21 @@ export default function Blog( props ){
             <h4>Latest Post</h4>
           </div>
           <ul className="comments-list">
+            { props.posts.map(item => (
             <li>
-              <div className="alignleft">
-                <a href="#0">
-                  <img src="assets/img/blog-5.jpg" alt="" />
-                </a>
-              </div>
-              <small>Category - 11.08.2016</small>
-              <h3>
-                <a href="#" title="">
-                  Verear qualisque ex minimum...
-                </a>
-              </h3>
-            </li>
-            <li>
-              <div className="alignleft">
-                <a href="#0">
-                  <img src="assets/img/blog-6.jpg" alt="" />
-                </a>
-              </div>
-              <small>Category - 11.08.2016</small>
-              <h3>
-                <a href="#" title="">
-                  Verear qualisque ex minimum...
-                </a>
-              </h3>
-            </li>
-            <li>
-              <div className="alignleft">
-                <a href="#0">
-                  <img src="assets/img/blog-4.jpg" alt="" />
-                </a>
-              </div>
-              <small>Category - 11.08.2016</small>
-              <h3>
-                <a href="#" title="">
-                  Verear qualisque ex minimum...
-                </a>
-              </h3>
-            </li>
+            <div className="alignleft">
+              <a href="#0">
+                <img src="assets/img/blog-5.jpg" alt="" />
+              </a>
+            </div>
+            <small>Category - 11.08.2016</small>
+            <h3>
+              <a href="#" title="">
+                Verear qualisque ex minimum...
+              </a>
+            </h3>
+          </li>
+            ))}
           </ul>
         </div>
         {/* /widget */}
@@ -172,43 +149,16 @@ export default function Blog( props ){
             <h4>Categories</h4>
           </div>
           <ul className="cats">
+              { props.posts.map(item => (
             <li>
-              <a href="#">
-                Food <span>(12)</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Places to visit <span>(21)</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                New Places <span>(44)</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Suggestions and guides <span>(31)</span>
-              </a>
-            </li>
+            <a href="#">
+              Food <span>(12)</span>
+            </a>
+          </li>
+              )) }
           </ul>
         </div>
         {/* /widget */}
-        <div className="widget">
-          <div className="widget-title">
-            <h4>Popular Tags</h4>
-          </div>
-          <div className="tags">
-            <a href="#">Food</a>
-            <a href="#">Bars</a>
-            <a href="#">Cooktails</a>
-            <a href="#">Shops</a>
-            <a href="#">Best Offers</a>
-            <a href="#">Transports</a>
-            <a href="#">Restaurants</a>
-          </div>
-        </div>
         {/* /widget */}
       </aside>
       {/* /aside */}
