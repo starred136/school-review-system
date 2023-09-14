@@ -9,7 +9,7 @@ export default function Help(){
     <div className="wrapper">
       <div className="container">
         <i className="pe-7s-help2" />
-        <h1>Vanno Help Center</h1>
+        <h1>Get in Touch with Us</h1>
         <form>
           <div id="custom-search-input">
             <div className="input-group">

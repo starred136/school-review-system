@@ -69,7 +69,7 @@ export default function index({ categories }) {
               </a>
             </div>
             {/* /grid_item */}
-            {categories.map((item) => (
+            {props.categories.map((item) => (
               <div className="col-lg-4 col-sm-6">
                 <a href="grid-listings-filterstop.html" className="grid_item">
                   <figure>
@@ -191,7 +191,7 @@ export default function index({ categories }) {
                       <i className="icon_star" />
                       <i className="icon_star" />
                       <i className="icon_star empty" />
-                      <em>4.50/5.00</em>
+                      <em>4.00/5.00</em>
                     </span>
                     <small>Shops</small>
                   </div>
@@ -299,7 +299,7 @@ export default function index({ categories }) {
               <div className="col-lg-5 col-md-7 float-end">
                 <h3>Let's Help You</h3>
                 <p>
-                  Vanno is a review platform open to everyone. Share your
+                  School Review is a review platform open to everyone. Share your
                   experiences to help others make better choices, and help
                   companies up their game. Our mission is to bring people and
                   companies together to create experiences for everyone.
@@ -310,7 +310,7 @@ export default function index({ categories }) {
                     href="pricing.html"
                     data-wow-delay="0.5s"
                   >
-                    Join Vanno Now!
+                    Join School Review Now!
                   </a>
                 </p>
               </div>

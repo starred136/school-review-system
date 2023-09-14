@@ -7,8 +7,8 @@ export default function About(){
   <section className="hero_single office">
     <div className="wrapper">
       <div className="container">
-        <h1>About Vanno</h1>
-        <p>Vanno helps grow your business using customer reviews</p>
+        <h1>About School Review</h1>
+        <p>School Review helps grow your business using customer reviews</p>
       </div>
     </div>
   </section>

@@ -1,10 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
+export default function Login() {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+  const [error, setError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-export default function Login(){
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const { email, password } = formData;
+
+    setIsSubmitting(true);
+
+    // Create an object with the login data
+    const loginData = {
+      email,
+      password,
+    };
+
+    try {
+      // Send a POST request to your REST API endpoint for login
+      const response = await fetch("http://localhost/wordpress/mysite/wp/v2/users", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(loginData),
+      });
+
+      if (response.ok) {
+        // Login successful
+        setError("cool dude");
+        // Redirect or perform other actions as needed
+      } else {
+        // Login failed
+        const data = await response.json();
+        setError(data.message || "Login failed.");
+      }
+    } catch (error) {
+      setError("An error occurred. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
     return(
-        <>
         <>
   <nav id="menu" className="fake_menu" />
   <div id="preloader">
@@ -15,7 +66,7 @@ export default function Login(){
     <aside>
       <figure>
       </figure>
-      <form>
+      <form onSubmit={handleSubmit}>
 
         <div className="divider">
           <span>Or</span>
@@ -27,6 +78,9 @@ export default function Login(){
             name="email"
             id="email"
             placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
           />
           <i className="icon_mail_alt" />
         </div>
@@ -36,8 +90,10 @@ export default function Login(){
             className="form-control"
             name="password"
             id="password"
-            defaultValue=""
             placeholder="Password"
+            value={formData.password}
+            onChange={handleChange}
+            required
           />
           <i className="icon_lock_alt" />
         </div>
@@ -55,23 +111,27 @@ export default function Login(){
             </a>
           </div>
         </div>
-        <a href="#0" className="btn_1 rounded full-width">
-          Login to Vanno
-        </a>
+        {error && <p className="error">{error}</p>}
+            {isSubmitting ? (
+              <p>Logging in...</p>
+            ) : (
+              <button type="submit" className="btn_1 rounded full-width">
+                Login to School Review
+              </button>
+            )}
         <div className="text-center add_top_10">
-          New to Vanno?{" "}
+          New to School Review?{" "}
           <strong>
             <Link href="/register">Sign up!</Link>
           </strong>
         </div>
       </form>
-      <div className="copy">© 2023 Vanno</div>
+      <div className="copy">© 2023 School Review</div>
     </aside>
   </div>
-  {/* /login */}
-  {/* COMMON SCRIPTS */}
+  
 </>
 
-        </>
+       
     )
 }

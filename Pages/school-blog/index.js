@@ -7,8 +7,8 @@ export default function BlogPost(){
   <section className="hero_single general">
     <div className="wrapper">
       <div className="container">
-        <h1>Vanno Blog</h1>
-        <p>Vanno helps grow your business using customer reviews</p>
+        <h1>School Review Blog</h1>
+        <p>School Review helps grow your business using customer reviews</p>
       </div>
     </div>
   </section>
@@ -342,13 +342,10 @@ export default function BlogPost(){
             <h4>Popular Tags</h4>
           </div>
           <div className="tags">
-            <a href="#">Food</a>
-            <a href="#">Bars</a>
-            <a href="#">Cooktails</a>
-            <a href="#">Shops</a>
-            <a href="#">Best Offers</a>
-            <a href="#">Transports</a>
-            <a href="#">Restaurants</a>
+            <a href="#">School name</a>
+            <a href="#">School name</a>
+            <a href="#">School name</a>
+            
           </div>
         </div>
         {/* /widget */}

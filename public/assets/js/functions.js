@@ -1,4 +1,4 @@
-(function ($) {
+;(function ($) {
 
 	"use strict";
 
@@ -28,7 +28,7 @@
 		navbar: {
 			title: 'MENU'
 		},
-		navbars: [{position:'bottom',content: ['<a href="#0">© 2023 Vanno</a>']}]}, 
+		navbars: [{position:'bottom',content: ['<a href="#0">© 2023 School Review</a>']}]}, 
 		{
 		// configuration
 		clone: true,
@@ -348,4 +348,5 @@
 		}, 600);
 	});
 	
-})(window.jQuery); 
+})
+	// (window.jQuery);

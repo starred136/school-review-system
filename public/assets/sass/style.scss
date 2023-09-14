@@ -1,8 +1,8 @@
 /*
-Theme Name: Vanno
-Theme URI: http://www.ansonika.com/vanno/
-Author: Ansonika
-Author URI: http://themeforest.net/user/Ansonika/
+Theme Name: School Review
+https://SchoolReview
+Author: Tangmoh Francky
+Author URI: https://github.com/starred136/SchoolReview
 
 [Table of contents] 
 
@@ -1016,6 +1016,7 @@ ul#additional_links {
 		background: url(../img/home_section_1.jpg) top center no-repeat fixed;
 		@include background-size(cover);
 		@include mobile {background: url(../img/home_section_1.jpg) top no-repeat fixed;@include background-size(cover);}
+		
 		.wrapper {
 			@include rgba(bg, #000, 0.6);
 			h3 {

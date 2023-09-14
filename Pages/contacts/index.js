@@ -7,8 +7,8 @@ export default function contacts(){
   <section className="hero_single general">
     <div className="wrapper">
       <div className="container">
-        <h1>Get in Touch with Vanno</h1>
-        <p>Vanno helps grow your business using customer reviews</p>
+        <h1>Get in Touch with School Review</h1>
+        <p>Claim your school and let School Review helps grow your business using customer reviews</p>
       </div>
     </div>
   </section>
@@ -21,13 +21,13 @@ export default function contacts(){
             <li>
               <a href="#section-1">
                 <i className="pe-7s-help1" />
-                Questions<em>Omnis justo gloriatur et sit</em>
+                Questions<em>List of questions frequently asked...</em>
               </a>
             </li>
             <li>
               <a href="#section-2">
                 <i className="pe-7s-help2" />
-                Support<em>Quo corrumpit euripidis</em>
+                Support<em>Feel free to reach on to us for any sup.</em>
               </a>
             </li>
           </ul>
@@ -210,24 +210,18 @@ export default function contacts(){
       <div className="col-md-6">
         <div className="box_faq">
           <i className="icon_info_alt" />
-          <h4>Porro soleat pri ex, at has lorem accusamus?</h4>
+          <h4>What are school reviews and rating systems??</h4>
           <p>
-            Ut unum diceret eos, mel cu velit principes, ut quo inani dolorem
-            mediocritatem. Mea in justo posidonium necessitatibus. Augue
-            honestatis vis no, ius quot mazim forensibus in, per sale virtute
-            legimus ne. Mea dicta facilisis eu.
+        School reviews and rating systems are mechanisms that provide information about the quality and performance of educational institutions. They help parents, students, and educators make informed decisions about schools.
           </p>
         </div>
       </div>
       <div className="col-md-6">
         <div className="box_faq">
           <i className="icon_info_alt" />
-          <h4>Ut quo inani dolorem mediocritatem?</h4>
+          <h4>Why are school reviews and ratings important?</h4>
           <p>
-            Ut unum diceret eos, mel cu velit principes, ut quo inani dolorem
-            mediocritatem. Mea in justo posidonium necessitatibus. Augue
-            honestatis vis no, ius quot mazim forensibus in, per sale virtute
-            legimus ne. Mea dicta facilisis eu.
+          Why are school reviews and ratings important?
           </p>
         </div>
       </div>
@@ -237,24 +231,22 @@ export default function contacts(){
       <div className="col-md-6">
         <div className="box_faq">
           <i className="icon_info_alt" />
-          <h4>Per sale virtute legimus ne?</h4>
-          <p>
-            Ut unum diceret eos, mel cu velit principes, ut quo inani dolorem
-            mediocritatem. Mea in justo posidonium necessitatibus. Augue
-            honestatis vis no, ius quot mazim forensibus in, per sale virtute
-            legimus ne. Mea dicta facilisis eu.
+          <h4>Where can I find school ratings for my area?</h4>
+                  <p>
+                    Search base on location will soon be implemented but...<br/>
+          You can usually find school ratings on government education websites, school district websites, or educational review websites like GreatSchools, Niche, or SchoolDigger.
+
           </p>
         </div>
       </div>
       <div className="col-md-6">
         <div className="box_faq">
           <i className="icon_info_alt" />
-          <h4>Mea in justo posidonium necessitatibus?</h4>
+          <h4>What factors are considered when rating a school?</h4>
           <p>
-            Ut unum diceret eos, mel cu velit principes, ut quo inani dolorem
-            mediocritatem. Mea in justo posidonium necessitatibus. Augue
-            honestatis vis no, ius quot mazim forensibus in, per sale virtute
-            legimus ne. Mea dicta facilisis eu.
+          
+
+      Factors considered can include academic performance, teacher quality, extracurricular programs, student-teacher ratios, safety, parent reviews, and more, depending on the rating system.
           </p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 
 export const getStaticProps = async () => {
-  const posts = await fetch("http://localhost/wordpress/wp-json/wp/v2/posts").then(
+  const posts = await fetch("http://localhost/wordpress/mysite/wp-json/wp/v2/posts").then(
     (res) => res.json()
   );
 
@@ -62,7 +62,7 @@ export default function Categories( props ){
     <div className="row justify-content-center">
 
 
-      {props.posts.map(item => (
+      {/* {props.posts.map(item => ( */}
       <div className="col-lg-3 col-6">
       <a href="grid-listings-filterstop.html" className="box_cat_home">
         <img src="assets/img/icon_home_1.svg" width={65} height={65} alt="" />
@@ -78,7 +78,7 @@ export default function Categories( props ){
         </ul>
       </a>
     </div>
-      ))}
+      {/* ))} */}
     </div>
   </div>
   {/* /container */}
@@ -115,8 +115,8 @@ export default function Categories( props ){
   <div className="call_section_2">
     <div className="wrapper">
       <div className="container">
-        <h3>Get started now with Vanno...improve your business.</h3>
-        <a className="btn_1 medium">Join Vanno Now!</a>
+        <h3>Get started now with School Review...improve your business.</h3>
+        <a className="btn_1 medium">Join School Review Now!</a>
       </div>
     </div>
   </div>

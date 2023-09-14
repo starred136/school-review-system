@@ -26,9 +26,6 @@ export default function Footer(props){
               <a href="#0">About us</a>
             </li>
             <li>
-              <a href="#0">Faq</a>
-            </li>
-            <li>
               <a href="#0">Help</a>
             </li>
             <li>
@@ -51,7 +48,7 @@ export default function Footer(props){
           aria-controls="collapse_ft_2"
           className="collapse_bt_mobile"
         >
-          <h3>Categories</h3>
+          <h3>Latest Schools</h3>
           <div className="circle-plus closed">
             <div className="horizontal" />
             <div className="vertical" />
@@ -60,23 +57,12 @@ export default function Footer(props){
         <div className="collapse show" id="collapse_ft_2">
           <ul className="links">
             <li>
-              <a href="#0">Shops</a>
+            <a href="/reviews-page/siantou">siantou</a>
             </li>
             <li>
-              <a href="#0">Hotels</a>
+            <a href="/reviews-page/ICT">ICT University, Yaoundé</a>
             </li>
-            <li>
-              <a href="#0">Restaurants</a>
-            </li>
-            <li>
-              <a href="#0">Bars</a>
-            </li>
-            <li>
-              <a href="#0">Events</a>
-            </li>
-            <li>
-              <a href="#0">View all</a>
-            </li>
+            
           </ul>
         </div>
       </div>
@@ -98,13 +84,13 @@ export default function Footer(props){
           <ul className="contacts">
             <li>
               <i className="ti-home" />
-              97845 Baker st. 567
+              Location: 
               <br />
-              Los Angeles - US
+              Yaounde
             </li>
             <li>
               <i className="ti-headphone-alt" />
-              +61 23 8093 3400
+              number
             </li>
             <li>
               <i className="ti-email" />
@@ -190,18 +176,7 @@ export default function Footer(props){
     <div className="row">
       <div className="col-lg-6">
         <ul id="footer-selector">
-          <li>
-            <div className="styled-select" id="lang-selector">
-              <select>
-                <option value="English" selected="">
-                  English
-                </option>
-                <option value="French">French</option>
-                <option value="Spanish">Spanish</option>
-                <option value="Russian">Russian</option>
-              </select>
-            </div>
-          </li>
+          
         </ul>
       </div>
       <div className="col-lg-6">
@@ -213,7 +188,7 @@ export default function Footer(props){
             <a href="#0">Privacy</a>
           </li>
           <li>
-            <span>© 2023 Vanno</span>
+            <span>© 2023 School Review</span>
           </li>
         </ul>
       </div>

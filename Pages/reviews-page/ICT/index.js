@@ -13,18 +13,18 @@ export default function Reviews() {
       <div className="container">
         <div className="row">
           <div className="col-lg-8">
-            {/* <figure> */}
-              <img src="/assets/img/schools/yibs-logo.png" alt="yibs-logo" />
-            {/* </figure> */}
-            <small>Yaoundé</small>
-            <h1>YAOUNDE INTERNATIONAL BUSINESS SCHOOL</h1>
+            <figure>
+              <img src="/assets/img/schools/ictu-logo.png" alt="" />
+            </figure>
+            <small>Shop</small>
+            <h1>ICT University, Yaoundé</h1>
             <span className="rating">
               <i className="icon_star" />
               <i className="icon_star" />
               <i className="icon_star" />
               <i className="icon_star" />
               <i className="icon_star empty" />
-              <em>4.50/5.00 - based on # reviews</em>
+              <em>4.50/5.00 - based on 234 reviews</em>
             </span>
           </div>
           <div className="col-lg-4 review_detail">
@@ -108,7 +108,7 @@ export default function Reviews() {
                     className="progress-bar"
                     role="progressbar"
                     style={{ width: 0 }}
-                    aria-valuenow={90}
+                    aria-valuenow={0}
                     aria-valuemin={0}
                     aria-valuemax={100}
                   />
@@ -136,27 +136,33 @@ export default function Reviews() {
         <figure>
           <img alt="" className="img-fluid" src="img/blog-single.jpg" />
         </figure>
-        <h2>YAOUNDE INTERNATIONAL BUSINESS SCHOOL</h2>
+        <h2>Ei pro alia placerat theophrastus</h2>
         
         {/* /post meta */}
         <div className="post-content">
           <div className="dropcaps">
             <p>
-            The Yaounde International Business School (YIBS) is a private university located in Yaounde, the capital city of Cameroon. 
-            <br/><br/>
-YIBS offers a range of undergraduate and postgraduate programs in the field of business administration, international business, finance, marketing, entrepreneurship, and related disciplines. The university aims to provide students with practical skills and knowledge to succeed in the business world.
-<br/>
-The faculty at YIBS consists of experienced professors and industry professionals who bring their expertise to the classroom. The university also emphasizes practical learning through internships, case studies, and group projects.
-<br/>
-YIBS is known for its international focus, with students from various countries studying on campus. This diversity provides a multicultural learning environment and promotes global perspectives.
-<br/>
-Additionally, YIBS has collaborations and partnerships with other international universities, enabling students to participate in exchange programs and gain exposure to different educational systems and cultures.
-<br/>
-The university's campus facilities include well-equipped classrooms, a library, computer labs, and recreational spaces. YIBS also organizes events, seminars, and workshops to enrich students' learning experiences and foster networking opportunities.
+            ICT University is one of the best private universities in Cameroon that train professionals in ICT and managerial human capacity.<br/>
+
+It is located in the capital and was established in 2010 with headquarters in Cameroon.
+Its accreditation is registered in the state of Louisiana, USA. Many students have trusted this institute because its environment is friendly and modern.
+What makes its particularity is the fact that it is bilingual. Hence, learners from both languages can get register.
+
             </p>
           </div>
           <p>
-          
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old. Richard McClintock, a Latin professor
+            at Hampden-Sydney College in Virginia, looked up one of the more
+            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+            going through the cites of the word in classical literature,
+            discovered the undoubtable source. Lorem Ipsum comes from sections
+            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+            of Good and Evil) by Cicero, written in 45 BC. This book is a
+            treatise on the theory of ethics, very popular during the
+            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+            amet..", comes from a line in section 1.10.32.
           </p>
         </div>
         {/* /post */}
@@ -193,10 +199,10 @@ The university's campus facilities include well-equipped classrooms, a library, 
                 <img src="img/blog-5.jpg" alt="" />
               </a>
             </div>
-            <small>Publish: - latest</small>
+            <small>School name - 11.08.2016</small>
             <h3>
               <a href="#" title="">
-                By......
+                Verear qualisque ex minimum...
               </a>
             </h3>
           </li>
@@ -206,10 +212,10 @@ The university's campus facilities include well-equipped classrooms, a library, 
                 <img src="img/blog-6.jpg" alt="" />
               </a>
             </div>
-            <small>Publish: - latest</small>
+            <small>School - 11.08.2016</small>
             <h3>
               <a href="#" title="">
-                By......
+                Verear qualisque ex minimum...
               </a>
             </h3>
           </li>
@@ -219,17 +225,17 @@ The university's campus facilities include well-equipped classrooms, a library, 
       {/* /widget */}
       <div className="widget">
         <div className="widget-title">
-          <h4>Categories</h4>
+          <h4>Schools</h4>
         </div>
         <ul className="cats">
           <li>
             <a href="#">
-              School name <span>(12)</span>
+            School name <span>(12)</span>
             </a>
           </li>
           <li>
             <a href="#">
-              Places to visit <span>(21)</span>
+              School name <span>(21)</span>
             </a>
           </li>
         </ul>
@@ -240,9 +246,9 @@ The university's campus facilities include well-equipped classrooms, a library, 
           <h4>Popular Schools</h4>
         </div>
         <div className="tags">
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
+          <a href="#">School name</a>
+          <a href="#">School name</a>
+          <a href="#">See more</a>
         </div>
       </div>
       {/* /widget */}
@@ -322,7 +328,7 @@ The university's campus facilities include well-equipped classrooms, a library, 
             </div>
             <div className="col-md-10">
               <div className="review_content">
-                <strong>Reply from YAOUNDE INTERNATIONAL BUSINESS SCHOOL</strong>
+                <strong>Reply from ICT University, Yaoundé</strong>
                 <em>Published 3 minutes ago</em>
                 <p>
                   <br />
@@ -402,8 +408,9 @@ The university's campus facilities include well-equipped classrooms, a library, 
           </div>
           {/* /row */}
         </div>
-        {/* /review_card */}
-        <div className="review_card">
+                {/* /review_card */}
+                <div className="review_card">
+        {/* 
           <div className="row">
             <div className="col-md-2 user_info">
               <figure>
@@ -458,7 +465,7 @@ The university's campus facilities include well-equipped classrooms, a library, 
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           {/* /row */}
           <div className="row reply">
             <div className="col-md-2 user_info">
@@ -468,7 +475,7 @@ The university's campus facilities include well-equipped classrooms, a library, 
             </div>
             <div className="col-md-10">
               <div className="review_content">
-                <strong>Reply from YAOUNDE INTERNATIONAL BUSINESS SCHOOL</strong>
+                <strong>Reply from ICT University, Yaoundé</strong>
                 <em>Published 3 minutes ago</em>
                 <p>
                   <br />
@@ -582,35 +589,35 @@ The university's campus facilities include well-equipped classrooms, a library, 
       {/* /col */}
       <div className="col-lg-4">
         <div className="box_general company_info">
-          <h3>YAOUNDE INTERNATIONAL BUSINESS SCHOOL</h3>
+          <h3>ICT University, Yaoundé</h3>
           <p>
-          YIBS offers career development programs that are industry-focused and are designed to meet new market trends for emerging economies. We aim to imbed in students a career focus and a vision for a lasting impact on their lives and the communities (society) in which they operate.
-<br/>
-Our tuition staff is drawn from network of reputable business executives in leading firms, who have acquired similar qualifications and are currently leveraging on the field. We are unique in our delivery and do not discriminate on any basis, given the opportunity to transform individuals into becoming proactive business experts through the various tuition programs.
-<br/>
-Thus, we offer career advancement opportunities at all levels and in varied business related disciplines; entry levels ranging from GCE Ordinary level to Masters.
+            Illud scripserit mei an, sea te sonet partem contentiones. Eu quo
+            corrumpit euripidis, enim sadipscing eos an. Mucius doctus
+            constituto pri at, ne cetero postulant pro. At vix utinam corpora,
+            ea oblique moderatius usu. Vix id viris consul honestatis, an
+            constituto deterruisset consectetuer pro.
           </p>
           <p>
             <strong>Address</strong>
             <br />
-            97845 Baker st. 567
+            Address
             <br />
-            Los Angeles - US
+            location
           </p>
           <p>
             <strong>Website</strong>
             <br />
-            <a href="#0">www.goodelectronics.com</a>
+            <a href="#0">ictuniversity.org</a>
           </p>
           <p>
             <strong>Email</strong>
             <br />
-            <a href="#0">info@goodelectronics.com</a>
+            <a href="#0">info@.com</a>
           </p>
           <p>
             <strong>Telephone</strong>
             <br />
-            +54 423 565624
+            number
           </p>
           <p className="follow_company">
             <strong>Follow us</strong>

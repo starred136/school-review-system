@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 export const getStaticProps = async () => {
-  const posts = await fetch("http://localhost/wordpress/wp-json/wp/v2/posts").then(
+  const posts = await fetch("http://localhost/wordpress/mysite/wp-json/wp/v2/posts").then(
     (res) => res.json()
   );
 
@@ -17,7 +17,7 @@ export default function Blog( props ){
     <div className="wrapper">
       <div className="container">
         <h1>School Blog</h1>
-        <p>Vanno helps grow your business using customer reviews</p>
+        <p>School Review helps grow your business using customer reviews</p>
       </div>
     </div>
   </section>
